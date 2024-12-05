@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion Poll Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Opinion Poll Hub</h1>
+        <p>Your voice matters! Participate in polls and see what others think about trending topics.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="cta">
+            <h2>Have Your Say</h2>
+            <p>Join the conversation and share your opinion on the most pressing issues of the day. Click the button below to start voting.</p>
+            <button id="opinionButton" onclick="redirectToPoll()">Give Your Opinion</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Opinion Poll Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Button Action -->
+    <script>
+        function redirectToPoll() {
+            // Redirect to the poll page
+            window.location.href = "poll.html"; // Replace "poll.html" with your actual poll page URL
+        }
+    </script>
+</body>
+</html>
