@@ -1,0 +1,18 @@
+document.getElementById("pollForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const options = document.getElementsByName("color");
+    let selectedOption = null;
+    for (const option of options) {
+        if (option.checked) {
+            selectedOption = option.value;
+            break;
+        }
+    }
+
+    if (selectedOption) {
+        document.getElementById("results").innerText = `Thank you for voting! You chose: ${selectedOption}`;
+    } else {
+        alert("Please select an option before submitting.");
+    }
+});
