@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Opinion Poll</h1>
+    <form id="pollForm">
+        <p>What is your favorite color?</p>
+        <label><input type="radio" name="color" value="Red"> Red</label><br>
+        <label><input type="radio" name="color" value="Blue"> Blue</label><br>
+        <label><input type="radio" name="color" value="Green"> Green</label><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
